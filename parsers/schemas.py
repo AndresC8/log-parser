@@ -1,5 +1,9 @@
 import shlex
 from datetime import datetime, timezone
+import csv
+import pandas as pd
+
+
 
 line = """
 
@@ -47,7 +51,7 @@ def validate_minimum(evt: dict):
 def mapping_fortigate_event(evt: dict):
     if not validate_minimum(evt):
         return None
-    
+
     timestamp = build_timestamp(evt)
     if not timestamp:
         return None
@@ -58,9 +62,9 @@ def mapping_fortigate_event(evt: dict):
     status = evt.get("status", "")
 
     if action == "login" and status == "failed":
-        event_type = "login_failed"
+        event_type = "login_failed" 
 
-    elif action == "login" and status == "succes":
+    elif action == "login" and status == "success":
         event_type = "login_success"
 
     elif action == "deny":
@@ -83,3 +87,5 @@ evt = parse_fortigate_kv(line)
 timestamp = build_timestamp(evt)
 
 print(mapping_fortigate_event(evt))
+
+df = pd.read_csv("Camilo\Desktop\proyect parser\log-parser\data\raw")

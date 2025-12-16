@@ -1,0 +1,2 @@
+Dec 10 03:15:22 ubuntu sshd[4221]: Failed password for invalid user admin from 10.0.0.5 port 22 ssh2
+Dec 10 03:16:01 ubuntu sshd[4221]: Accepted password for admin from 10.0.0.5 port 22 ssh2

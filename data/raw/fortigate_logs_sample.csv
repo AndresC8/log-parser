@@ -1,0 +1,11 @@
+"date=2025-03-10 time=08:14:22 devname=FGT60F devid=FGT60FTK19000001 logid=0100032001 type=event subtype=system level=warning vd=root logdesc=""Admin login failed"" action=login status=failed user=admin srcip=185.199.110.45"
+"date=2025-03-10 time=08:14:30 devname=FGT60F devid=FGT60FTK19000001 logid=0100032001 type=event subtype=system level=warning vd=root logdesc=""Admin login failed"" action=login status=failed user=admin srcip=185.199.110.45"
+"date=2025-03-10 time=08:14:45 devname=FGT60F devid=FGT60FTK19000001 logid=0100032002 type=event subtype=system level=notice vd=root logdesc=""Admin login successful"" action=login status=success user=admin srcip=192.168.1.10"
+
+"date=2025-03-10 time=09:01:12 devname=FGT60F devid=FGT60FTK19000001 logid=0000000013 type=traffic subtype=forward level=notice vd=root srcip=45.83.64.10 srcport=44521 dstip=10.0.0.5 dstport=22 proto=6 action=deny policyid=3 service=SSH"
+"date=2025-03-10 time=09:01:13 devname=FGT60F devid=FGT60FTK19000001 logid=0000000013 type=traffic subtype=forward level=notice vd=root srcip=45.83.64.10 srcport=44522 dstip=10.0.0.5 dstport=23 proto=6 action=deny policyid=3 service=TELNET"
+"date=2025-03-10 time=09:01:14 devname=FGT60F devid=FGT60FTK19000001 logid=0000000013 type=traffic subtype=forward level=notice vd=root srcip=45.83.64.10 srcport=44523 dstip=10.0.0.5 dstport=80 proto=6 action=deny policyid=3 service=HTTP"
+"date=2025-03-10 time=09:01:15 devname=FGT60F devid=FGT60FTK19000001 logid=0000000013 type=traffic subtype=forward level=notice vd=root srcip=45.83.64.10 srcport=44524 dstip=10.0.0.5 dstport=443 proto=6 action=deny policyid=3 service=HTTPS"
+
+"date=2025-03-10 time=11:32:09 devname=FGT60F devid=FGT60FTK19000001 logid=0000000013 type=traffic subtype=forward level=notice vd=root srcip=181.55.22.90 srcport=53321 dstip=10.0.0.20 dstport=3389 proto=6 action=allow policyid=10 service=RDP"
+"date=2025-03-10 time=02:47:55 devname=FGT60F devid=FGT60FTK19000001 logid=0100032002 type=event subtype=system level=notice vd=root logdesc=""Admin login successful"" action=login status=success user=backup_admin srcip=192.168.1.15"
